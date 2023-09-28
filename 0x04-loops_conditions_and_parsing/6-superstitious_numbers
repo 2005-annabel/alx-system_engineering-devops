@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# the loop displays numbers from 1-20 and:
+# {bad-luck from china} on the 4 iteration
+# {bad-luck from japan} on the 9th iteration
+# {bad-luck from Italy} on the 17th iteration
+myCounter=1
+while [ $myCounter -le 20 ]
+do
+echo "$myCounter"
+case $myCounter in
+"4") echo "bad luck from China";;
+"9") echo "bad luck from Japan";;
+"17") echo "bad luck from Italy";;
+esac
+(( myCounter++ ))
+done

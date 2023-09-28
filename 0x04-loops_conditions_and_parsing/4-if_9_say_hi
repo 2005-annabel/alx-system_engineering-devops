@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# while loop displays {best_school} 10 times.
+# display "Hi" on 9th iteration.
+myCounter=0
+while [ $myCounter -lt 10 ]
+do
+if [ $myCounter -eq 9 ]
+then
+echo "Hi"
+fi
+echo "Best School"
+(( myCounter++ ))
+done

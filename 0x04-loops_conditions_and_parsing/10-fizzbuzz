@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# the loop displays the num 1-100 in list
+# displays [fizzbuzz] for multiple of 3 and 5
+# [fizz] for multiple of 3
+# [buzz] for multiple of 5
+for fizzNumber in {1..100}
+do
+if (( fizzNumber % 3 == 0 && fizzNumber % 5 == 0 ))
+then
+echo "FizzBuzz"
+elif (( fizzNumber % 3 == 0 ))
+then
+echo "Fizz"
+elif (( fizzNumber % 5 == 0 ))
+then
+echo "Buzz"
+else
+echo "$fizzNumber"
+fi
+done

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# the loop displays time for 12hrs & 59min
+# the time displayed is from 0-12hrs 1-59min
+hourCount=0
+while [ $hourCount -le 12 ]
+do
+echo "Hour: $hourCount"
+minuteCount=1
+while [ $minuteCount -le 59 ]
+do
+echo "$minuteCount"
+(( minuteCount++ ))
+done
+(( hourCount++ ))
+done

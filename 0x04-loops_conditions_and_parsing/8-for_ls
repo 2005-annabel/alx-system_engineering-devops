@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# the for loop displays the contents of the cd in the list
-listContent=$(ls)
-for j in $listContent; do
-echo "$j" | cut -d '-' -f2
-done

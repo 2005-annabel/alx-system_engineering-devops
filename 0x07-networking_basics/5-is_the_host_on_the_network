@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# displays the host of the network
+# listening sockets displayed only
+#!/bin/bash
+if [ $# -eq 0 ]; then
+echo "Usage: $0 <IP_ADDRESS>"
+exit 1
+fi
+ipAddress="$1"
+pingCommand="ping -c 5 $ipAddress"
+if $pingCommand >/dev/null 2>&1; then
+echo "$ipAddress is on the network"
+else
+echo "$ipAddress is not on the network"
+fi

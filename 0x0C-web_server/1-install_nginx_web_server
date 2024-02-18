@@ -1,0 +1,6 @@
+cript installs nigux to my web-01 server
+sudo apt update -y
+sudo apt install nginx -y
+sudo ufw 'Nginx HTTP'
+sudo bash -c 'echo "Hello World!" > /var/www/html/index.html'
+sudo service nginx restart
